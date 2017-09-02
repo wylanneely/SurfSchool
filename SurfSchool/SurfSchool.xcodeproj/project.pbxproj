@@ -7,21 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B23538F71F5B6FCD00103938 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23538F61F5B6FCD00103938 /* UserController.swift */; };
 		B2ECCE681F435A710059DFBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ECCE671F435A710059DFBF /* AppDelegate.swift */; };
-		B2ECCE6A1F435A710059DFBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ECCE691F435A710059DFBF /* ViewController.swift */; };
 		B2ECCE6D1F435A710059DFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2ECCE6B1F435A710059DFBF /* Main.storyboard */; };
 		B2ECCE6F1F435A710059DFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2ECCE6E1F435A710059DFBF /* Assets.xcassets */; };
 		B2ECCE721F435A710059DFBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2ECCE701F435A710059DFBF /* LaunchScreen.storyboard */; };
+		B2ECCE801F435F7A0059DFBF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ECCE7F1F435F7A0059DFBF /* User.swift */; };
+		B2ECCE841F435FB40059DFBF /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2ECCE831F435FB40059DFBF /* CloudKit.framework */; };
+		B2ECCE861F4364F80059DFBF /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ECCE851F4364F80059DFBF /* Review.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B23538F61F5B6FCD00103938 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		B2ECCE641F435A710059DFBF /* SurfSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2ECCE671F435A710059DFBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2ECCE691F435A710059DFBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B2ECCE6C1F435A710059DFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2ECCE6E1F435A710059DFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2ECCE711F435A710059DFBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2ECCE731F435A710059DFBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2ECCE7F1F435F7A0059DFBF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B2ECCE811F435FB20059DFBF /* SurfSchool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SurfSchool.entitlements; sourceTree = "<group>"; };
+		B2ECCE831F435FB40059DFBF /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		B2ECCE851F4364F80059DFBF /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2ECCE841F435FB40059DFBF /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 			children = (
 				B2ECCE661F435A710059DFBF /* SurfSchool */,
 				B2ECCE651F435A710059DFBF /* Products */,
+				B2ECCE821F435FB40059DFBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,73 @@
 		B2ECCE661F435A710059DFBF /* SurfSchool */ = {
 			isa = PBXGroup;
 			children = (
+				B2ECCE811F435FB20059DFBF /* SurfSchool.entitlements */,
 				B2ECCE671F435A710059DFBF /* AppDelegate.swift */,
-				B2ECCE691F435A710059DFBF /* ViewController.swift */,
 				B2ECCE6B1F435A710059DFBF /* Main.storyboard */,
+				B2ECCE7D1F435F030059DFBF /* Views */,
+				B2ECCE7C1F435F030059DFBF /* ViewControllers */,
+				B2ECCE7B1F435F020059DFBF /* ModelControllers */,
+				B2ECCE7A1F435F000059DFBF /* Models */,
+				B2ECCE791F435EFF0059DFBF /* Resources */,
+			);
+			path = SurfSchool;
+			sourceTree = "<group>";
+		};
+		B2ECCE791F435EFF0059DFBF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2ECCE7E1F435F050059DFBF /* Supporting */,
 				B2ECCE6E1F435A710059DFBF /* Assets.xcassets */,
 				B2ECCE701F435A710059DFBF /* LaunchScreen.storyboard */,
 				B2ECCE731F435A710059DFBF /* Info.plist */,
 			);
-			path = SurfSchool;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B2ECCE7A1F435F000059DFBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2ECCE7F1F435F7A0059DFBF /* User.swift */,
+				B2ECCE851F4364F80059DFBF /* Review.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B2ECCE7B1F435F020059DFBF /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B23538F61F5B6FCD00103938 /* UserController.swift */,
+			);
+			name = ModelControllers;
+			sourceTree = "<group>";
+		};
+		B2ECCE7C1F435F030059DFBF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B2ECCE7D1F435F030059DFBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B2ECCE7E1F435F050059DFBF /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		B2ECCE821F435FB40059DFBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2ECCE831F435FB40059DFBF /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +166,14 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = L4J4QU6QE4;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -137,8 +213,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2ECCE6A1F435A710059DFBF /* ViewController.swift in Sources */,
 				B2ECCE681F435A710059DFBF /* AppDelegate.swift in Sources */,
+				B2ECCE801F435F7A0059DFBF /* User.swift in Sources */,
+				B23538F71F5B6FCD00103938 /* UserController.swift in Sources */,
+				B2ECCE861F4364F80059DFBF /* Review.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SurfSchool/SurfSchool.entitlements;
 				DEVELOPMENT_TEAM = L4J4QU6QE4;
 				INFOPLIST_FILE = SurfSchool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -274,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SurfSchool/SurfSchool.entitlements;
 				DEVELOPMENT_TEAM = L4J4QU6QE4;
 				INFOPLIST_FILE = SurfSchool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -302,6 +382,7 @@
 				B2ECCE781F435A710059DFBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
